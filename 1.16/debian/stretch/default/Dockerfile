@@ -1,4 +1,4 @@
-FROM nginx:1.16.0
+FROM nginx:1.16.1
 
 LABEL maintainer="Nico Herbig <nico@nicoherbig.io>"
 

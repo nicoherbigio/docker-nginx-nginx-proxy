@@ -11,7 +11,9 @@ env:
   DOCKER_IMAGE_CONTEXT_PATH: 1.18/debian/default/
   DOCKERHUB_IMAGE_TAGS: |
     nicoherbigde/nginx-proxy:1.18
+    nicoherbigio/nginx-proxy:1.18
     nicoherbigde/nginx-proxy:1.18.0
+    nicoherbigio/nginx-proxy:1.18.0
 
 jobs:
   build-and-push:

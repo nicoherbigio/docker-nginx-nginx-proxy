@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - '.github/workflows/docker-image-1.18.yml'
+      - '1.18/**'
   schedule:
     - cron: '0 1 * * 1'
 

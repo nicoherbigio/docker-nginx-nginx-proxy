@@ -1,4 +1,4 @@
-FROM nginx:1.20.1
+FROM nginx:1.20.2
 
 LABEL maintainer="Nico Herbig <nico@nicoherbig.io>"
 

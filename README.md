@@ -1,9 +1,25 @@
-# NGINX Proxy
+# NGINX Proxy Docker image
+
+[![Build Status](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/actions/workflows/build-docker-images.yml/badge.svg)](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/actions/workflows/build-docker-images.yml)
 
 ## Supported tags and respective `Dockerfile` links
 
- * [`1.22`, `1.22.0`](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/blob/main/1.22/debian/default/Dockerfile)
- * [`1.20`, `1.20.2`](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/blob/main/1.20/debian/default/Dockerfile)
+ * [`1.22`, `1.22.0` (1.22/debian/default/Dockerfile)](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/blob/main/1.22/debian/default/Dockerfile)
+ * [`1.20`, `1.20.2` (1.20/debian/default/Dockerfile)](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/blob/main/1.20/debian/default/Dockerfile)
+
+## How to get this image
+
+The recommended way to get the NGINX Proxy Docker image is to pull the prebuilt image from Docker Hub by specifying the tagged version.
+
+```console
+$ docker pull nicoherbigde/nginx-proxy:[TAG]
+```
+
+The [list of available versions](https://hub.docker.com/r/nicoherbigde/nginx-proxy/tags) can be viewed at Docker Hub.
+
+## How to use this image
+
+Coming soon ;-)
 
 ## Copyleft
 

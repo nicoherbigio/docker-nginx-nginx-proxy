@@ -5,7 +5,6 @@
 ## Supported tags and respective `Dockerfile` links
 
  * [`1.22`, `1.22.0` (1.22/debian/default/Dockerfile)](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/blob/main/1.22/debian/default/Dockerfile)
- * [`1.20`, `1.20.2` (1.20/debian/default/Dockerfile)](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/blob/main/1.20/debian/default/Dockerfile)
 
 ## How to get this image
 

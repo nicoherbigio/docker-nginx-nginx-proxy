@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - '.github/**'
-      - '1.20/**'
       - '1.22/**'
   schedule:
     - cron: '0 1 * * *'
@@ -19,15 +18,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [1.20, 1.22]
+        version: [1.22]
         include:
-          - version: 1.20
-            docker-context: 1.20/debian/default
-            docker-tags: |
-              nicoherbigde/nginx-proxy:1.20
-              nicoherbigio/nginx-proxy:1.20
-              nicoherbigde/nginx-proxy:1.20.2
-              nicoherbigio/nginx-proxy:1.20.2
           - version: 1.22
             docker-context: 1.22/debian/default
             docker-tags: |

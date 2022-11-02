@@ -4,7 +4,7 @@
 
 ## Supported tags and respective `Dockerfile` links
 
- * [`1.22`, `1.22.1`](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/blob/main/1.22/debian/default/Dockerfile)
+ * [`1.22`, `1.22-bullseye`, `1.22.1`, `1.22.1-bullseye`](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/blob/main/1.22/debian/default/Dockerfile)
 
 ## How to get this image
 

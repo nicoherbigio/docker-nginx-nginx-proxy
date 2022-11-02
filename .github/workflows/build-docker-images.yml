@@ -18,13 +18,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [1.22]
+        version: [1.22-bullseye]
         include:
-          - version: 1.22
+          - version: 1.22-bullseye
             docker-context: 1.22/debian/default
             docker-tags: |
               nicoherbigde/nginx-proxy:1.22
+              nicoherbigde/nginx-proxy:1.22-bullseye
               nicoherbigde/nginx-proxy:1.22.1
+              nicoherbigde/nginx-proxy:1.22.1-bullseye
 
     steps:
       - name: Checkout Git Repository

@@ -38,3 +38,4 @@ RUN set -ex \
 
 COPY assets/*.conf        /etc/nginx/
 COPY assets/conf.d/*.conf /etc/nginx/conf.d/
+COPY assets/certs/*.pem   /etc/ssl/certs/

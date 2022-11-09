@@ -5,15 +5,15 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
     # Disable all pull requests for GitHub Actions dependencies
     open-pull-requests-limit: 0
 
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
-    directory: "/"
+    directory: "/1.22/debian/default"
     schedule:
       interval: "daily"
-    # Disable all pull requests for Docker dependencies
-    open-pull-requests-limit: 0
-
+    ignore:
+      - dependency-name: "nginx"
+        update-types: [ "version-update:semver-major", "version-update:semver-minor" ]

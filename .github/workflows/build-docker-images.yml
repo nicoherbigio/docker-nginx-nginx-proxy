@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/**'
       - '1.22/**'
+      - '1.24/**'
   schedule:
     - cron: '0 1 * * *'
   workflow_dispatch:
@@ -18,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [1.22-bullseye]
+        version: [1.22-bullseye, 1.24-bullseye]
         include:
           - version: 1.22-bullseye
             docker-context: 1.22/debian/default
@@ -27,6 +28,13 @@ jobs:
               nicoherbigde/nginx-proxy:1.22-bullseye
               nicoherbigde/nginx-proxy:1.22.1
               nicoherbigde/nginx-proxy:1.22.1-bullseye
+          - version: 1.24-bullseye
+            docker-context: 1.24/debian/default
+            docker-tags: |
+              nicoherbigde/nginx-proxy:1.24
+              nicoherbigde/nginx-proxy:1.24-bullseye
+              nicoherbigde/nginx-proxy:1.24.0
+              nicoherbigde/nginx-proxy:1.24.0-bullseye
 
     steps:
       - name: Checkout Git Repository

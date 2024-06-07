@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - '.github/**'
-      - '1.24/**'
       - '1.26/**'
   schedule:
     - cron: '0 1 * * *'
@@ -19,15 +18,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [1.24-bullseye, 1.26-bookworm]
+        version: [1.26-bookworm]
         include:
-          - version: 1.24-bullseye
-            docker-context: 1.24/debian/default
-            docker-tags: |
-              nicoherbigde/nginx-proxy:1.24
-              nicoherbigde/nginx-proxy:1.24-bullseye
-              nicoherbigde/nginx-proxy:1.24.0
-              nicoherbigde/nginx-proxy:1.24.0-bullseye
           - version: 1.26-bookworm
             docker-context: 1.26/debian/default
             docker-tags: |

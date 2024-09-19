@@ -25,8 +25,8 @@ jobs:
             docker-tags: |
               nicoherbigde/nginx-proxy:1.26
               nicoherbigde/nginx-proxy:1.26-bookworm
-              nicoherbigde/nginx-proxy:1.26.1
-              nicoherbigde/nginx-proxy:1.26.1-bookworm
+              nicoherbigde/nginx-proxy:1.26.2
+              nicoherbigde/nginx-proxy:1.26.2-bookworm
 
     steps:
       - name: Checkout Git Repository

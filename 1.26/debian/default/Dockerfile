@@ -1,4 +1,4 @@
-FROM nginx:1.26.2-bookworm
+FROM nginx:1.26.3-bookworm
 
 LABEL maintainer="Nico Herbig <nico@nicoherbig.io>"
 

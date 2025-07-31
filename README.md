@@ -4,6 +4,7 @@
 
 ## Supported tags and respective `Dockerfile` links
 
+ * [`1.28`, `1.28-bookworm`, `1.28.0`, `1.28.0-bookworm`](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/blob/main/1.28/debian/default/Dockerfile)
  * [`1.26`, `1.26-bookworm`, `1.26.3`, `1.26.3-bookworm`](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/blob/main/1.26/debian/default/Dockerfile)
 
 ## How to get this image

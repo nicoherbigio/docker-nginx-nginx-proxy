@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - '.github/**'
-      - '1.26/**'
       - '1.28/**'
   schedule:
     - cron: '0 1 * * 6'
@@ -19,15 +18,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [1.26-bookworm, 1.28-bookworm]
+        version: [1.28-bookworm]
         include:
-          - version: 1.26-bookworm
-            docker-context: 1.26/debian/default
-            docker-tags: |
-              nicoherbigde/nginx-proxy:1.26
-              nicoherbigde/nginx-proxy:1.26-bookworm
-              nicoherbigde/nginx-proxy:1.26.3
-              nicoherbigde/nginx-proxy:1.26.3-bookworm
           - version: 1.28-bookworm
             docker-context: 1.28/debian/default
             docker-tags: |

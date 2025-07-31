@@ -11,14 +11,6 @@ updates:
 
   # Maintain dependencies for Docker
   - package-ecosystem: "docker"
-    directory: "/1.26/debian/default"
-    schedule:
-      interval: "daily"
-    ignore:
-      - dependency-name: "nginx"
-        update-types: [ "version-update:semver-major", "version-update:semver-minor" ]
-
-  - package-ecosystem: "docker"
     directory: "/1.28/debian/default"
     schedule:
       interval: "daily"

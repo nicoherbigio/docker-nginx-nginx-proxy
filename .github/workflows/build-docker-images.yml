@@ -18,15 +18,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [1.28-bookworm]
+        version: [1.28-trixie]
         include:
-          - version: 1.28-bookworm
+          - version: 1.28-trixie
             docker-context: 1.28/debian/default
             docker-tags: |
               nicoherbigde/nginx-proxy:1.28
-              nicoherbigde/nginx-proxy:1.28-bookworm
-              nicoherbigde/nginx-proxy:1.28.0
-              nicoherbigde/nginx-proxy:1.28.0-bookworm
+              nicoherbigde/nginx-proxy:1.28-trixie
+              nicoherbigde/nginx-proxy:1.28.1
+              nicoherbigde/nginx-proxy:1.28.1-trixie
 
     steps:
       - name: Checkout Git Repository

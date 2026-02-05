@@ -4,7 +4,7 @@
 
 ## Supported tags and respective `Dockerfile` links
 
- * [`1.28`, `1.28-trixie`, `1.28.1`, `1.28.1-trixie`](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/blob/main/1.28/debian/default/Dockerfile)
+ * [`1.28`, `1.28-trixie`, `1.28.2`, `1.28.2-trixie`](https://github.com/nicoherbigio/docker-nginx-nginx-proxy/blob/main/1.28/debian/default/Dockerfile)
 
 ## How to get this image
 

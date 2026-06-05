@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/workflows/**'
       - '1.28/**'
+      - '1.30/**'
   schedule:
     - cron: '0 1 * * 6'
   workflow_dispatch:
@@ -18,7 +19,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [1.28-trixie]
+        version: [1.28-trixie, 1.30-trixie]
         include:
           - version: 1.28-trixie
             docker-context: 1.28/debian/default
@@ -27,6 +28,13 @@ jobs:
               nicoherbigde/nginx-proxy:1.28-trixie
               nicoherbigde/nginx-proxy:1.28.3
               nicoherbigde/nginx-proxy:1.28.3-trixie
+          - version: 1.30-trixie
+            docker-context: 1.30/debian/default
+            docker-tags: |
+              nicoherbigde/nginx-proxy:1.30
+              nicoherbigde/nginx-proxy:1.30-trixie
+              nicoherbigde/nginx-proxy:1.30.0
+              nicoherbigde/nginx-proxy:1.30.0-trixie
 
     steps:
       - name: Checkout Git Repository

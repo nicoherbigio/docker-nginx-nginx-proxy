@@ -1,4 +1,4 @@
-FROM nginx:1.30.3-trixie
+FROM nginx:1.30.4-trixie
 
 LABEL maintainer="Nico Herbig <nico@nicoherbig.io>"
 

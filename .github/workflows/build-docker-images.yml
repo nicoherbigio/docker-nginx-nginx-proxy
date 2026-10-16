@@ -25,8 +25,8 @@ jobs:
             docker-tags: |
               nicoherbigde/nginx-proxy:1.30
               nicoherbigde/nginx-proxy:1.30-trixie
-              nicoherbigde/nginx-proxy:1.30.5
-              nicoherbigde/nginx-proxy:1.30.5-trixie
+              nicoherbigde/nginx-proxy:1.30.6
+              nicoherbigde/nginx-proxy:1.30.6-trixie
 
     steps:
       - name: Checkout Git Repository
